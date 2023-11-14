@@ -1,0 +1,31 @@
+/* CHECKBOX  */
+.checkbox {
+  position: relative;
+  .checkbox-input {
+    appearance: none;
+  }
+
+  .checkbox-label {
+    padding-left: 24px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 5px;
+      content: '';
+      width: 16px;
+      height: 16px;
+      border: 1px solid var(--color-foreground);
+      border-radius: 2px;
+    }
+  }
+
+  .checkbox-input:checked + .checkbox-label::before {
+    background-image: url('../static/check-mark.svg');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary) black;
+  }
+}

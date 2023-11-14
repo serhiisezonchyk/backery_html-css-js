@@ -1,0 +1,51 @@
+/* HERO SECTION STYLES */
+.hero-section {
+  padding: 272px 0;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url('../../static/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: 70% top;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        102.76deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url('../../static/hero-section-background@2x.jpg');
+  }
+  .hero-title {
+    margin-bottom: 48px;
+    font-size: 45px;
+    color: var(--color-background);
+    font-family: sans-serif;
+    text-align: center;
+    span {
+      &.accent {
+        color: var(--color-primary);
+      }
+    }
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 65px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
+  }
+  .hero-section-button {
+    display: block;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

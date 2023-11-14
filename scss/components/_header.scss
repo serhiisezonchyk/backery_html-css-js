@@ -1,0 +1,50 @@
+/* HEADER STYLE */
+header {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  position: absolute;
+  /* position: fixed; */
+  left: 0;
+  right: 0;
+  top: 0;
+  /* z-index: 2;
+      transition: background-color .3s ease; */
+  &.nav-active {
+    background-color: var(--color-background-dark);
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .header-button {
+      display: none;
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+      }
+    }
+    .header-burger {
+      display: block;
+      background-color: transparent;
+      border: none;
+      fill:  var(--color-background);
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+      }
+    }
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 1;
+    .header-menu {
+      display: none;
+      @media screen and (min-width: $bp-desktop) {
+        display: flex;
+        gap: 64px;
+        flex-grow: 1;
+        justify-content: center;
+      }
+    }
+  }
+}
