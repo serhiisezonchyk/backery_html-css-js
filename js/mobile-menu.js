@@ -3,7 +3,12 @@ const menuBtnOpen = document.querySelector('.header-burger');
 const menuBtnClose = document.querySelector('.mobile-menu-close');
 const menuItems = document.querySelectorAll('.mobile-menu-list a');
 
-const toggleMenu = () => mobileMenu.classList.toggle('is-open');
+const toggleMenu = () => {
+  mobileMenu.classList.toggle('is-open');
+  if (mobileMenu.classList.contains('is-open')) {
+    mobileNavAmimation()
+  } 
+};
 
 const disableScroll = () =>
   document.body.classList.toggle('is-scroll-disabled');

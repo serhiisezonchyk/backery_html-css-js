@@ -16,6 +16,9 @@ body {
     font-size: 18px;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* REMOVE BASIC MARGIN TOP  */
 h1,
@@ -44,6 +47,7 @@ a {
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
+  overflow: hidden;
 }
 
 img {
@@ -52,3 +56,4 @@ img {
   height: auto;
   object-fit: cover;
 }
+
